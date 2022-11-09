@@ -1,0 +1,107 @@
+---
+booktitle: Proceedings of Topological, Algebraic, and Geometric Learning 2022
+shortname: TAGL
+volume: '196'
+year: '2022'
+start: 2022-04-25
+end: 2022-04-29
+published: 2022-11-09
+layout: proceedings
+series: Proceedings of Machine Learning Research
+publisher: PMLR
+issn: 2640-3498
+id: TAGL-2022
+month: 0
+cycles: false
+bibtex_editor: Cloninger, Alexander and Doster, Timothy and Emerson, Tegan and Kaul,
+  Manohar and Ktena, Ira and Kvinge, Henry and Miolane, Nina and Rice, Bastian and
+  Tymochko, Sarah and Wolf, Guy
+editor:
+- given: Alexander
+  family: Cloninger
+- given: Timothy
+  family: Doster
+- given: Tegan
+  family: Emerson
+- given: Manohar
+  family: Kaul
+- given: Ira
+  family: Ktena
+- given: Henry
+  family: Kvinge
+- given: Nina
+  family: Miolane
+- given: Bastian
+  family: Rice
+- given: Sarah
+  family: Tymochko
+- given: Guy
+  family: Wolf
+title: Proceedings of Machine Learning Research
+description: |
+  Proceedings of Topological, Algebraic, and Geometric Learning 2022
+    Held in Virtual on 25-29 April 2022
+
+  Published as Volume 196 by the Proceedings of Machine Learning Research on 09 November 2022.
+
+  Volume Edited by:
+    Alexander Cloninger
+    Timothy Doster
+    Tegan Emerson
+    Manohar Kaul
+    Ira Ktena
+    Henry Kvinge
+    Nina Miolane
+    Bastian Rice
+    Sarah Tymochko
+    Guy Wolf
+
+  Series Editors:
+    Neil D. Lawrence
+date_str: 25--29 Apr
+url: https://proceedings.mlr.press
+author:
+  name: PMLR
+baseurl: "/v196"
+twitter_username: MLResearchPress
+github_username: mlresearch
+markdown: kramdown
+exclude:
+- README.md
+- Gemfile
+- ".gitignore"
+plugins:
+- jekyll-feed
+- jekyll-seo-tag
+- jekyll-remote-theme
+remote_theme: lawrennd/proceedings
+style: pmlr
+permalink: "/:title.html"
+ghub:
+  edit: true
+  repository: v196
+display:
+  copy_button:
+    bibtex: true
+    endnote: true
+    apa: true
+  comments: false
+volume_type: Volume
+volume_dir: v196
+email: ''
+conference:
+  name: Topological, Algebraic and Geometric Learning Workshops 2022
+  url: https://www.tagds.com/events/conferences/tag-in-machine-learning
+  location: Virtual
+  dates:
+  - 2022-04-25
+  - 2022-04-26
+  - 2022-04-27
+  - 2022-04-28
+  - 2022-04-29
+analytics:
+  google:
+    tracking_id: UA-92432422-1
+orig_bibfile: "/Users/neil/mlresearch/v196/TAGL-2022.bib"
+# Site settings
+# Original source:  /Users/neil/mlresearch/v196/TAGL-2022.bib

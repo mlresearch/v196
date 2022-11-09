@@ -1,0 +1,259 @@
+@Proceedings{TAGL-2022,
+    booktitle = {Proceedings of Topological, Algebraic, and Geometric Learning 2022},
+    name = {Topological, Algebraic and Geometric Learning Workshops 2022},
+    shortname = {TAGL},
+    editor = { Cloninger, Alexander and  Doster, Timothy and Emerson, Tegan and Kaul, Manohar and Ktena, Ira and  Kvinge, Henry and Miolane, Nina and Rice, Bastian and Tymochko, Sarah and Wolf, Guy},
+    volume = {196},
+    year = {2022},
+    start = {2022-04-25},
+    end = {2022-04-29},
+    published = {2022-11-09},
+    conference_url = {https://www.tagds.com/events/conferences/tag-in-machine-learning},
+    address =  {Virtual},
+}
+
+@InProceedings{preface,
+author = { Cloninger, Alexander and  Doster, Timothy and Emerson, Tegan and Kaul, Manohar and Ktena, Ira and Kvinge, Henry and Miolane, Nina and Rice, Bastian and Tymochko, Sarah and Wolf, Guy},
+pages={1-5},
+title={Preface},
+abstract={The deep learning revolution has provided us with resounding successes in different domains, such as image analysis. Despite initial claims to the contrary, however, the last years showed a dire need to understand and describe fundamental aspects of modern machine learning models. In this context, algebra, geometry, and topology offer a veritable cornucopia of different methods, ranging from the description of the boundary of neural network architectures to the development of more expressive models for graph learning, for example. There are few cross-pollination efforts between the machine learning community and the mathematical community at large. The papers in this collection represent two such efforts; all of them have been originally submitted to either the ICML Workshop on Topology, Algebra, and Geometry in Machine Learning or to the ICLR Workshop on Geometrical and Topological Representation Learning. We hope that this collection demonstrates to the reader the benefits of a more fundamental perspective on machine learning, and we hope that this will constitute the first of many such collections.}
+}
+
+@InProceedings{balwani22a,
+title={Zeroth-Order Topological Insights into Iterative Magnitude Pruning},
+author={Balwani, Aishwarya and Krzyston, Jakob},
+pages={6-16},
+abstract={Modern-day neural networks are famously large, yet also highly redundant and compressible;
+there exist numerous pruning strategies in the deep learning literature that yield over 90\% sparser sub-networks of fully-trained, dense architectures while still maintaining their original accuracies. Amongst these many methods though -- thanks to its conceptual simplicity, ease of implementation, and efficacy -- Iterative Magnitude Pruning (IMP) dominates in practice and is the de facto baseline to beat in the pruning community. However, theoretical explanations as to why a simplistic method such as IMP works at all are few and limited. In this work, we leverage persistent homology to show that IMP inherently encourages retention of those weights which preserve topological information in a trained network. Subsequently, we also provide bounds on how much different networks can be pruned while perfectly preserving their zeroth order topological features, and present a modified version of IMP to do the same.},
+}
+
+@InProceedings{ Bamberger22a,
+title={ A Topological characterisation of Weisfeiler-Leman equivalence classes },
+author={ Bamberger, Jacob},
+pages={17-27},
+abstract={ Graph Neural Networks (GNNs) are learning models aimed at processing graphs and signals on graphs. The most popular and successful GNNs are based on message passing schemes. Such schemes inherently have limited expressive power when it comes to distinguishing two non-isomorphic graphs. In this article, we rely on the theory of covering spaces to fully characterize the classes of graphs that GNNs cannot distinguish. We then generate arbitrarily many non-isomorphic graphs that cannot be distinguished by GNNs, leading to the GraphCovers dataset. We also show that the number of indistinguishable graphs in our dataset grows super-exponentially with the number of nodes. Finally, we test the GraphCovers dataset on several GNN architectures, showing that none of them can distinguish any two graphs it contains. },
+}
+
+@InProceedings{Barbero22a,
+title={Sheaf Neural Networks with Connection Laplacians},
+author={Barbero, Federico and Bodnar, Cristian and S\'aez de Oc\'ariz Borde, Haitz and Bronstein, Michael and Veli\v{c}kovi\'c, Petar and Li\`o, Pietro},
+pages={28-36},
+abstract={A Sheaf Neural Network (SNN) is a type of Graph Neural Network (GNN) that operates on a sheaf, an object that equips a graph with vector spaces over its nodes and edges and linear maps between these spaces. SNNs have been shown to have useful theoretical properties that help tackle issues arising from heterophily and over-smoothing. One complication intrinsic to these models is finding a good sheaf for the task to be solved. Previous works proposed two diametrically opposed approaches: manually constructing the sheaf based on domain knowledge and learning the sheaf end-to-end using gradient-based methods. However, domain knowledge is often insufficient, while learning a sheaf could lead to overfitting and significant computational overhead. In this work, we propose a novel way of computing sheaves drawing inspiration from Riemannian geometry: we leverage the manifold assumption to compute manifold-and-graph-aware orthogonal maps, which optimally align the tangent spaces of neighbouring data points. We show that this approach achieves promising results with less computational overhead when compared to previous SNN models. Overall, this work provides an interesting connection between algebraic topology and differential geometry, and we hope that it will spark future research in this direction.},
+}
+
+@InProceedings{ Ben-Shaul22a,
+title={Nearest Class-Center Simplification through Intermediate Layers},
+author={Ben-Shaul, Ido and Dekel, Shai},
+pages={37-47},
+abstract={Recent advances in neural network theory have introduced geometric properties that occur during training, past the Interpolation Threshold- where the training error reaches zero. We inquire into the phenomena coined \emph{Neural Collapse} in the intermediate layers of the network, and emphasize the innerworkings of Nearest Class-Center Mismatch inside a deepnet. We further show that these processes occur both in vision and language model architectures. Lastly, we propose a Stochastic Variability-Simplification Loss (SVSL) that encourages better geometrical features in intermediate layers, yielding improvements in both train metrics and generalization.},
+}
+
+@InProceedings{Chen22a,
+title={Diversified Multiscale Graph Learning with Graph Self-Correction},
+author={Chen, Yuzhao and Bian, Yatao and Zhang, Jiying and Xiao, Xi and Xv, Tingyang and Rong, Yu},
+pages={48-54},
+abstract={Though the multiscale graph learning techniques have enabled advanced feature extraction frameworks, we find that the classic ensemble strategy shows inferior performance while encountering the high homogeneity of the learnt representation, which is caused by the nature of existing graph pooling methods. To cope with this issue, we propose a diversified multiscale graph learning model equipped with two core ingredients:  a graph self-correction mechanism to generate informative embedded graphs, and a diversity boosting regularizer  to achieve a comprehensive characterization of the input graph. The proposed mechanism compensates the pooled graph with the lost information  during the graph pooling process by  feeding back  the estimated residual graph, which serves as a plug-in component for popular graph pooling methods. Meanwhile, pooling methods enhanced with the self-correcting procedure encourage the discrepancy of node embeddings, and thus it contributes to the success of ensemble learning strategy. The proposed regularizer instead enhances the ensemble diversity at the graph-level embeddings by leveraging the interaction among individual classifiers.  Extensive experiments on popular graph classification benchmarks show that the approaches lead to significant improvements over state-of-the-art graph pooling methods, and the ensemble multiscale graph learning models achieve superior enhancement.},
+}
+
+@InProceedings{chen22b,
+title={Local Distance Preserving Auto-encoders using Continuous kNN Graphs},
+author={Chen, Nutan and van der Smagt, Patrick and Cseke, Botond},
+pages={55-66},
+abstract={Auto-encoder models that preserve similarities in the data are a popular tool in representation learning.In this paper we introduce several auto-encoder models that preserve local distances when mapping from the data space to the  latent space.  We use a local distance-preserving loss that is based on the continuous k-nearest neighbours graph which is known to capture topological features at all scales simultaneously. To improve training performance, we formulate learning as a constraint optimisation problem with local distance preservation as the main objective and reconstruction accuracy as a constraint. We generalise this approach to hierarchical variational auto-encoders thus learning generative models with geometrically consistent latent and data spaces.  Our method provides state-of-the-art performance across several standard datasets and evaluation metrics.},
+}
+
+@InProceedings{Chew22a,
+title={The Manifold Scattering Transform for High-Dimensional Point Cloud Data},
+author={Chew, Joyce and Steach, Holly and Viswanath, Siddharth and Wu, Hau-Tieng and Hirn, Matthew and Needell, Deanna and Vesely, Matthew D. and Krishnaswamy, Smita and Perlmutter, Michael},
+pages={67-78},
+abstract={The manifold scattering transform is a deep feature extractor for data defined on a Riemannian manifold. It is one of the first examples of extending convolutional neural network-like operators to general manifolds. The initial work on this model focused primarily on its theoretical stability and invariance properties but did  not provide methods for its numerical implementation except in the case of two-dimensional surfaces with predefined meshes. In this work, we present practical schemes,  based on the theory of diffusion maps, for implementing the manifold scattering transform to datasets arising in naturalistic systems, such as single cell genetics, where the data is a high-dimensional point cloud modeled as lying on a low-dimensional manifold. We show that our methods are effective for signal classification and manifold classification tasks.},
+}
+
+@InProceedings{coda22a,
+title={Fiber Bundle Morphisms as a Framework for Modeling Many-to-Many Maps},
+author={Coda, Elizabeth and Courts, Nico and Wight, Colby and  Truong, Loc and Choi, WoongJo and Godfrey, Charles and Emerson, Tegan and Kappagantula, Keerti and Kvinge, Henry},
+pages={79-85},
+abstract={While it is not generally reflected in the `nice' datasets used for benchmarking machine learning algorithms, the real-world is full of processes that would be best described as many-to-many. That is, a single input can potentially yield many different outputs (whether due to noise, imperfect measurement, or intrinsic stochasticity in the process) and many different inputs can yield the same output (that is, the map is not injective). For example, imagine a sentiment analysis task where, due to linguistic ambiguity, a single statement can have a range of different sentiment interpretations while at the same time many distinct statements can represent the same sentiment. When modeling such a multivalued function $f: X \rightarrow Y$, it is frequently useful to be able to model the distribution on $f(x)$ for specific input $x$ as well as the distribution on fiber $f^{-1}(y)$ for specific output $y$. Such an analysis helps the user (i) better understand the variance intrinsic to the process they are studying and (ii) understand the range of specific input $x$ that can be used to achieve output $y$. Following existing work which used a fiber bundle framework to better model many-to-one processes, we describe how morphisms of fiber bundles provide a template for building models which naturally capture the structure of many-to-many processes.},
+}
+
+@InProceedings{Datta22a,
+title={ A Geometrical Approach to Finding Difficult Examples in Language },
+author = {Dataa, Debajyoti and Kumar, Shashwat and Barnes, Laura and Fletcher, P. Thomas},
+pages={86-95},
+abstract={ A growing body of evidence has suggested that metrics like accuracy overestimate the classifier's generalization ability. Several state of the art Natural Language Processing (NLP) classifiers like BERT and LSTM rely on superficial cue words (e.g., if a movie review has the word “romantic”, the review tends to be positive), or unnecessary words (e.g., learning a proper noun to classify a movie as positive or negative). One approach to test NLP classifiers for such fragilities is analogous to how teachers discover gaps in a student's understanding: by finding problems where small perturbations confuse the student. While several perturbation strategies like contrast sets or random word substitutions have been proposed, they are typically based on heuristics and/or require expensive human involvement. In this work, using tools from information geometry, we propose a principled way to quantify the fragility of an example for an NLP classifier. By discovering such fragile examples for several state of the art NLP models like BERT, LSTM, and CNN, we demonstrate their susceptibility to meaningless perturbations like noun/synonym substitution, causing their accuracy to drop down to 20 percent in some cases. Our approach is simple, architecture agnostic and can be used to study the fragilities of text classification models.  },
+}
+
+@InProceedings{deSurrel22a,
+title={RipsNet: a general architecture for fast and robust estimation of the persistent homology of point clouds},
+author={de Surrel, Thibault and Hensel, Felix and Carri\`{e}re, Mathieu and Lacombe, Th\'{e}o and Ike, Yuichi and Kurihara, Hiroaki and Glisse, Marc and Chazal, Fr\'{e}d\'{e}ric},
+pages={96-106},
+abstract={The use of topological descriptors in modern machine learning applications, such as persistence diagrams (PDs) arising from Topological Data Analysis (TDA), has shown great potential in various domains. However, their practical use in applications is often hindered by two major limitations: the computational complexity required to compute such descriptors exactly, and their sensitivity to even low-level proportions of outliers. In this work, we propose to bypass these two burdens in a data-driven setting by entrusting the estimation of (vectorization of) PDs built on top of point clouds to a neural network architecture that we call RipsNet. Once trained on a given data set, RipsNet can estimate topological descriptors on test data very efficiently with generalization capacity. Furthermore, we prove that RipsNet is robust to input perturbations in terms of the 1-Wasserstein distance, a major improvement over the standard computation of PDs that only enjoys Hausdorff stability, yielding RipsNet to substantially outperform exactly-computed PDs in noisy settings. We showcase the use of RipsNet on both synthetic and real-world data. Our implementation will be made freely and publicly available as part of the open-source library Gudhi.},
+}
+
+@InProceedings{Finkelshtein22a,
+title={A Simple and Universal Rotation Equivariant Point-Cloud Network},
+author={ Finkelshtein, Ben and Baskin, Chaim and Maron, Haggai and Dym, Nadav},
+pages={107-115},
+abstract={ Equivariance to permutations and rigid motions is an important inductive bias for various 3D learning problems. Recently it has been shown that the equivariant Tensor Field Network architecture is universal- it can approximate any equivariant function. In this paper we suggest a much simpler architecture, prove that it enjoys the same universality guarantees and evaluate its performance on Modelnet40.},
+}
+
+@InProceedings{fitz22a,
+title={The Shape of Words - topological structure in natural language data},
+author={Fitz, Stephen},
+pages={116-123},
+abstract={This paper presents a novel method, based on the ideas from algebraic topology, for the analysis of raw natural language text. The paper introduces the notion of a word manifold - a simplicial complex, whose topology encodes grammatical structure expressed by the corpus. Results of experiments with a variety of natural and synthetic languages are presented, showing that the homotopy type of the word manifold is influenced by linguistic structure. The analysis includes a new approach to the Voynich Manuscript - an unsolved puzzle in corpus linguistics. In contrast to existing topological data analysis approaches, we do not rely on the apparatus of persistent homology. Instead, we develop a method of generating topological structure directly from strings of words.},
+}
+
+@InProceedings{gebhart22a,
+title={Graph Convolutional Networks from the Perspective of Sheaves and the Neural Tangent Kernel},
+author={Gebhart, Thomas},
+pages={124-132},
+abstract={Graph convolutional networks are a popular class of deep neural network algorithms which have shown success in a number of relational learning tasks. Despite their success, graph convolutional networks exhibit a number of peculiar features, including a bias towards learning oversmoothed and homophilic functions, which are not easily diagnosed due to the complex nature of these algorithms. We propose to bridge this gap in understanding by studying the neural tangent kernel of sheaf convolutional networks--a topological generalization of graph convolutional networks. To this end, we derive a parameterization of the neural tangent kernel for sheaf convolutional networks which separates the function into two parts: one driven by a forward diffusion process determined by the graph, and the other determined by the composite effect of nodes' activations on the output layer. This geometrically-focused derivation produces a number of immediate insights which we discuss in detail.},
+}
+
+@InProceedings{gonzalez-marquez22a,
+title={Two-dimensional visualization of large document libraries using {t-SNE}},
+author={Gonz\'alez-M\'arquez, Rita and Berens, Philipp and Kobak, Dmitry},
+pages={133-141},
+abstract={We benchmarked different approaches for creating 2D visualizations of large document libraries, using the {MEDLINE} ({PubMed}) database of the entire biomedical literature as a use case (19~million scientific papers). Our optimal pipeline is based on log-scaled {TF-IDF} representation of the abstract text, {SVD} preprocessing, and {t-SNE} with uniform affinities, early exaggeration annealing, and extended optimization. The resulting embedding distorts local neighborhoods but shows meaningful organization and rich structure on the level of narrow academic fields.},
+}
+
+@InProceedings{Hacker22a,
+  title    = {On the Surprising Behaviour of \texttt{node2vec}},
+  author   = {Hacker, Celia and Rieck, Bastian},
+pages={142-151},
+  abstract = {Graph embedding techniques are a staple of modern graph learning research. When using embeddings for downstream tasks such as classification, information about their stability and robustness, i.e., their susceptibility to sources of noise, stochastic effects, or specific parameter choices, becomes increasingly important. As one of the most prominent graph embedding schemes, we focus on \texttt{node2vec} and analyse its embedding quality from multiple perspectives. Our findings indicate that embedding quality is unstable with respect to parameter choices, and we propose strategies to remedy this in practice.}
+}
+
+@InProceedings{hamm22a,
+title={Riemannian CUR Decompositions for Robust Principal Component Analysis},
+author={Hamm, Keaton and Meskini, Mohamed and Cai, HanQin},
+pages={152-160},
+abstract={Robust Principal Component Analysis (PCA) has received massive attention in recent years. It aims to recover a low-rank matrix and a sparse matrix from their sum. This paper proposes a novel nonconvex Robust PCA algorithm, coined Riemannian CUR (RieCUR), which utilizes the ideas of Riemannian optimization and robust CUR decompositions. This algorithm has the same computational complexity as Iterated Robust CUR, which is currently state-of-the-art, but is more robust to outliers. RieCUR is also able to tolerate a significant amount of outliers, and is comparable to Accelerated Alternating Projections, which has high outlier tolerance but worse computational complexity than the proposed method. Thus, the proposed algorithm achieves state-of-the-art performance on Robust PCA both in terms of computational complexity and outlier tolerance.},
+}
+
+@InProceedings{ holtz22a,
+title={Evaluating Disentanglement in Generative Models Without Knowledge of Latent Factors},
+author={Holtz, Chester and Mishne, Gal and Cloninger, Alexander},
+pages={161-171},
+abstract={Probabilistic generative models provide a flexible and systematic framework for learning the underlying geometry of data. However, model selection in this setting is challenging, particularly when selecting for ill-defined qualities such as disentanglement or interpretability. In this work, we address this gap by introducing a method for ranking generative models based on the training dynamics exhibited during learning. Inspired by recent theoretical characterizations of disentanglement, our method does not require supervision of the underlying latent factors. We evaluate our approach by demonstrating the need for disentanglement metrics which do not require labels\textemdash the underlying generative factors. We additionally demonstrate that our approach correlates with baseline supervised methods for evaluating disentanglement. Finally, we show that our method can be used as an unsupervised indicator for downstream performance on reinforcement learning and fairness-classification problems.
+},
+}
+
+@InProceedings{hy22a,
+author={Hy, Truong Son and Kondor, Risi},
+title={Multiresolution Matrix Factorization and Wavelet Networks on Graphs},
+pages={172-182},
+abstract={Multiresolution Matrix Factorization (MMF) is unusual amongst fast matrix factorization algorithms in that it does not make a low rank assumption. This makes MMF especially well suited to modeling certain types of graphs with complex multiscale or hierarchical structure. While MMF promises to yield a useful wavelet basis, finding the factorization itself is hard, and existing greedy methods tend to be brittle. In this paper, we propose a "learnable" version of MMF that carefully optimizes the factorization with a combination of reinforcement learning and Stiefel manifold optimization through backpropagating errors. We show that the resulting wavelet basis far outperforms prior MMF algorithms and provides the first version of this type of factorization that can be robustly deployed on standard learning tasks. Furthermore, we construct the wavelet neural networks (WNNs) learning graphs on the spectral domain with the wavelet basis produced by our MMF learning algorithm. Our wavelet networks are competitive against other state-of-the-art methods in molecular graphs classification and node classification on citation graphs. Our complete paper with the Appendix and more experiments is publicly available at https://arxiv.org/pdf/2111.01940.pdf. We release our implementation at https://github.com/risilab/Learnable_MMF/.},
+}
+
+@InProceedings{jorgenson22a,
+title={Random Filters for Enriching the Discriminatory power of Topological Representations},
+author={Jorgenson, Grayson and Kvinge, Henry and Emerson, Tegan and Olson, Colin},
+pages={183-188},
+abstract={Topological representations of data are inherently coarse summaries which endows them with certain desirable properties like stability but also potentially inhibits their discriminatory power relative to fine-scale learned features. In this work we present a novel framework for enriching the discriminatory power of topological representations based on random filters and capturing ``interferencetopology'' rather than direct topology. We show that our random filters outperform previously explored structured image filters while requiring orders of magnitude less computational time. The approach is demonstrated on the MNIST dataset but is broadly applicable across data sets and modalities. This work is concluded with a discussion of the mathematical intuition underlying the approach and identification of future directions to enable deeper understanding and theoretical results.},
+}
+
+@InProceedings{kai22a,
+title={APPROXIMATE EQUIVARIANCE SO(3) NEEDLET CONVOLUTION},
+author={Kai Yi and Jialin Chen and Yu Guang Wang and Bingxin Zhou and Pietro Li\`{o} and Yanan Fan and Jan Hamann },
+pages={189-198},
+abstract={This paper develops a rotation-invariant needlet convolution for rotation group SO(3) to distill multiscale information of spherical signals. The spherical needlet transform is generalized from $\sS^2$ onto the SO(3) group, which decomposes a spherical signal to approximate and detailed spectral coefficients by a set of tight framelet operators. The spherical signal during the decomposition and reconstruction achieves rotation invariance.  Based on needlet transforms, we form a Needlet approximate Equivariance Spherical CNN (NES) with multiple SO(3) needlet convolutional layers. The network establishes a powerful tool to extract geometric-invariant features of spherical signals.  The model allows sufficient network scalability with multi-resolution representation. A robust signal embedding is learned with wavelet shrinkage activation function, which filters out redundant high-pass representation while maintaining approximate rotation invariance. The NES achieves state-of-the-art performance for quantum chemistry regression and Cosmic Microwave Background (CMB) delensing reconstruction, which shows great potential for solving scientific challenges with high-resolution and multi-scale spherical signal representation.},
+}
+
+@InProceedings{kassab22a,
+title={TopTemp: Parsing Precipitate Structure from Temper Topology},
+author={Kassab, Lara and Howland, Scott and Kvinge, Henry and Kappagantula, Keerti Sahithi and Emerson, Tegan},
+pages={199-205},
+abstract={Technological advances are in part enabled by the development of novel manufacturing processes that give rise to new materials or material property improvements. Development and evaluation of new manufacturing methodologies is labor-, time-, and resource-intensive expensive due to complex, poorly defined relationships between advanced manufacturing process parameters and the resulting microstructures. In this work, we present a topological representation of temper (heat-treatment) dependent material micro-structure, as captured by scanning electron microscopy, called TopTemp. We show that this topological representation is able to support temper classification of microstructures in a data limited setting, generalizes well to previously unseen samples, is robust to image perturbations, and captures domain interpretable features. The presented work outperforms conventional deep learning baselines and is a first step towards improving understanding of process parameters and resulting material properties.},
+}
+
+@InProceedings{khramtsova22a,
+title={Rethinking Persistent Homology For Visual Recognition},
+author={Khramtsova, Ekaterina and Zuccon, Guido and Wang, Xi and Baktashmotlagh, Mahsa},
+pages={206-215},
+abstract={Persistent topological properties of an image serve as an additional descriptor providing an insight that might not be discovered by traditional neural networks. The existing research in this area focuses primarily on efficiently integrating topological properties of the data in the learning process in order to enhance the performance. However, there is no existing study to demonstrate all possible scenarios where introducing topological properties can boost or harm the performance. This paper performs a detailed analysis of the effectiveness of topological properties for image classification in various training scenarios, defined by: the number of training samples, the complexity of the training data and the complexity of the backbone network. We identify the scenarios that benefit the most from topological features, e.g., training simple networks on small datasets. Additionally, we discuss the problem of topological consistency of the datasets which is one of the major bottlenecks for using topological features for classification. We further demonstrate how the topological inconsistency can harm the performance for certain scenarios.},
+}
+
+@InProceedings{li22a,
+title={Geodesic Properties of a Generalized Wasserstein Embedding for Time Series Aanalysis},
+author={Li, Shiying and Hasnat, Abu and Rubaiyat, Mohammad and Rohde, Gustavo K.},
+pages={216-225},
+abstract={Transport-based metrics and related embeddings (transforms) have recently been used to model signal classes where nonlinear structures or variations are present. In this paper, we study the geodesic properties of time series data with a generalized Wasserstein metric and the geometry related to their signed cumulative distribution transforms in the embedding space. Moreover, we show how understanding such geometric characteristics can provide added interpretability to certain time series classifiers, and be an inspiration for more robust classifiers. The appendix can be found at https://arxiv.org/abs/2206.01984. }
+}
+
+@InProceedings{Lino22a,
+title={{REMuS-GNN: A Rotation-Equivariant Model for Simulating Continuum Dynamics}},
+author={Lino, Mario and Fotiadis, Stathi and Bharath, Anil A. and Cantwell, Chris},
+pages={226-236},
+abstract={Numerical simulation is an essential tool in many areas of science and engineering, but its performance often limits application in practice or when used to explore large parameter spaces. On the other hand, surrogate deep learning models, while accelerating simulations, often exhibit poor accuracy and ability to generalise. In order to improve these two factors, we introduce REMuS-GNN, a rotation-equivariant multi-scale model for simulating continuum dynamical systems encompassing a range of length scales. REMuS-GNN is designed to predict an output vector field from an input vector field on a physical domain discretised into an unstructured set of nodes. Equivariance to rotations of the domain is a desirable inductive bias that allows the network to learn the underlying physics more efficiently, leading to improved accuracy and generalisation compared with similar architectures that lack such symmetry. We demonstrate and evaluate this method on the incompressible flow around elliptical cylinders.},
+}
+
+@InProceedings{liu22a,
+title={Persistent tor-algebra based stacking ensemble learning (PTA-SEL) for protein-protein binding affinity prediction},
+pages={237-247},
+author={Liu, Xiang  and  Xia, Kelin},
+abstract={Protein-protein interactions (PPIs) play crucial roles in almost all biological processes. Recently, data-driven machine learning models have shown great power in the analysis of PPIs. However, efficient molecular representation and featurization are still key issues that hinder the performance of learning models. Here, we propose persistent Tor-algebra (PTA), PTA-based molecular characterization and featurization, and PTA-based stacking ensemble learning (PTA-SEL) for PPI binding affinity prediction, for the first time. More specifically, the Vietoris-Rips complex is used to characterize the PPI structure and its persistent Tor-algebra is computed to form the molecular descriptors. These descriptors then are fed into our stacking model to make the prediction. We systematically test our model on the two most commonly used datasets, i.e., SKEMPI and AB-Bind. It has been found that our model outperforms all the existing models as far as we know, which demonstrates the great power of our model.}
+}
+
+@InProceedings{liu22b,
+title={Deoscillated Adaptive Graph Collaborative Filtering},
+author={Zhiwei Liu and Lin Meng and Fei Jiang and Jiawei Zhang and Philip S. Yu },
+pages={248-257},
+abstract={Collaborative Filtering~(CF) signals are crucial for a Recommender System~(RS) model to learn user and item embeddings. High-order information can alleviate the cold-start issue of CF-based methods, which is modeled through propagating the information over the user-item bipartite graph. Recent Graph Neural Networks~(GNNs) propose to stack multiple aggregation layers to propagate high-order signals.  However, there are three challenges, the oscillation problem, varying locality of bipartite graphs, and the fixed propagation pattern, which spoil the ability of the multi-layer structure to propagate information. In this paper, we theoretically prove the existence and boundary of the oscillation problem, and empirically study the varying locality and layer-fixed propagation problems. We propose a new RS model, named as Deoscillated adaptive Graph Collaborative Filtering (DGCF), which is constituted by stacking multiple CHP layers and LA layers. We conduct extensive experiments on real-world datasets to verify the effectiveness of DGCF. Detailed analyses indicate that DGCF solves oscillation problems, adaptively learns local factors, and has layer-wise propagation patterns. },
+}
+
+@InProceedings{ Lutzeyer22a,
+title={Sparsifying the Update Step in Graph Neural Networks},
+author={Lutzeyer, Johannes F. and Wu, Changmin and Vazirgiannis, Michalis},
+pages={258-268},
+abstract={Message-Passing Neural Networks (MPNNs), the most prominent Graph Neural Network (GNN) framework, celebrate much success in the analysis of graph-structured data. Concurrently, the sparsification of Neural Network models attracts a great amount of academic and industrial interest. In this paper we conduct a structured, empirical study of the effect of sparsification on the trainable part of MPNNs known as the Update step. To this end, we design a series of models to successively sparsify the linear transform in the Update step. Specifically, we propose the ExpanderGNN model with a tuneable sparsification rate and the Activation-Only GNN, which has no linear transform in the Update step. In agreement with a growing trend in the literature the sparsification paradigm is changed by initialising sparse neural network architectures rather than expensively sparsifying already trained architectures. Our novel benchmark models enable a better understanding of the influence of the Update step on model performance and outperform existing simplified benchmark models such as the Simple Graph Convolution. The ExpanderGNNs, and in some cases the Activation-Only models, achieve performance on par with their vanilla counterparts on several downstream tasks, while containing significantly fewer trainable parameters. Our code is publicly available at: https://github.com/ChangminWu/ExpanderGNN.},
+}
+
+@InProceedings{ myers22a,
+title={ICLR 2022 Challenge for Computational Geometry \& Topology: Design and Results},
+author={Myers, Adele and Utpala, Saiteja and Talbar, Shubham and Sanborn, Sophia and Shewmake, Christian and Donnat, Claire and  Mathe, Johan and  Sonthalia, Rishi and  Cui, Xinyue and Szwagier, Tom and Pignet, Arthur and Bergsson,Andri and Hauberg, S\oren and Nielsen, Dmitriy and Sommer, Stefan and Klindt, David and Hermansen, Erik and Vaupel, Melvin and Dunn, Benjamin and Xiong, Jeffrey and Aharony, Noga and Pe'er, Itsik and Ambellan, Felix and Hanik, Martin and Nava-Yazdani, Esfandiar and Tycowicz, Christoph von and Miolane, Nina },
+pages={269-276},
+abstract={This paper presents the computational challenge on differential geometry and topology that was hosted within the ICLR 2022 workshop “Geometric and Topo- logical Representation Learning”. The competition asked participants to provide implementations of machine learning algorithms on manifolds that would respect the API of the open-source software Geomstats (manifold part) and Scikit-Learn (machine learning part) or PyTorch. The challenge attracted seven teams in its two month duration. This paper describes the design of the challenge and summarizes its main findings.},
+}
+
+@InProceedings{Nagananda22a,
+title={Robust ${L}_p$-Norm Linear Discriminant Analysis with Proxy Matrix Optimization},
+author={Nagananda, Navya and Minnehan, Breton and Savakis, Andreas},
+pages={277-286},
+abstract={Linear Discriminant Analysis (LDA) is an established supervised dimensionality reduction method that is traditionally based on the ${L}_2$-norm. However, the standard ${L}_2$-norm LDA is susceptible to outliers in the data that often contribute to a drop in accuracy. Using the ${L}_1$ or fractional $p$-norms makes LDA more robust to outliers, but it is a harder problem to solve due to the nature of the corresponding objective functions. In this paper, we leverage the orthogonal constraint of the Grassmann manifold to iteratively obtain the optimal projection matrix for the data in a lower dimensional space. Instead of optimizing the matrix directly on the manifold, we use the proxy matrix optimization (PMO) method, utilizing an auxiliary matrix in ambient space that is retracted to the closest location on the manifold along the loss minimizing geodesic. The ${L}_p$-LDA-PMO learning is based on backpropagation, which allows easy integration in a neural network and flexibility to change the value of the $p$-norm. Our experiments on synthetic and real data show that using fractional $p$-norms for LDA leads to an improvement in accuracy compared to the traditional ${L}_2$-based LDA.},
+}
+
+@InProceedings{Park22a,
+title={The PWLR graph representation: A Persistent Weisfeiler-Lehman scheme with Random Walks for graph classification},
+author = {Sun Woo Park and Yun Young Choi and Dosang Joe and U Jin Choi and Youngho Woo},
+pages={287-297},
+abstract={This paper presents the Persistent Weisfeiler-Lehman Random walk scheme (abbreviated as PWLR) for graph representations, a novel mathematical framework which produces a collection of explainable low-dimensional representations of graphs with discrete and continuous node features. The proposed scheme effectively incorporates normalized Weisfeiler-Lehman procedure, random walks on graphs, and persistent homology. We thereby integrate three distinct properties of graphs, which are local topological features, node degrees, and global topological invariants, while preserving stability from graph perturbations. This generalizes many variants of Weisfeiler-Lehman procedures, which are primarily used to embed graphs with discrete node labels. Empirical results suggest that these representations can be efficiently utilized to produce comparable results to state-of-the-art techniques in classifying graphs with discrete node labels, and enhanced performances in classifying those with continuous node features. }
+}
+@InProceedings{Sonthalia22a,
+title={CubeRep: Learning Relations Between Different Views of Data   },
+author={Sonthalia, Rishi and Gilbert, Anna C. and Durham, Matthew  },
+pages={298-303},
+abstract={Multi-view learning tasks typically seek an aggregate synthesis of multiple views or perspectives of a single data set. The current approach assumes that there is an ambient space $X$ in which the views are images of $X$ under certain functions and attempts to learn these functions via a neural network. Unfortunately, such an approach neglects to consider the geometry of the ambient space. Hierarchically hyperbolic spaces (HHSes) do, however, provide a natural multi-view arrangement of data; they provide geometric tools for the assembly of different views of a single data set into a coherent global space, a \emph{CAT(0) cube complex}. In this work, we provide the first step toward theoretically justifiable methods for learning embeddings of multi-view data sets into CAT(0) cube complexes. We present an algorithm which, given a finite set of finite metric spaces (views) on a finite set of points (the objects), produces the key components of an HHS structure. From this structure, we can produce a \emph{CAT(0) cube complex} that encodes the hyperbolic geometry in the data while simultaneously allowing for Euclidean features given by the detected relations among the views.},
+}
+
+@InProceedings{ vanderpol22a,
+title={ Stochastic Parallelizable Eigengap Dilation for Large Graph Clustering  },
+author={ van der Pol, Elise and Gemp, Ian and Bachrach, Yoram},
+pages={304-311},
+abstract={ Large graphs commonly appear in social networks, knowledge graphs, recommender systems, life sciences, and decision making problems. Summarizing large graphs by their high level properties is helpful in solving problems in these settings. In spectral clustering, we aim to identify clusters of nodes where most edges fall within clusters and only few edges fall between clusters. This task is important for many downstream applications and exploratory analysis. A core step of spectral clustering is performing an eigendecomposition of the corresponding graph Laplacian matrix (or equivalently, a singular value decomposition, SVD, of the incidence matrix). The convergence of iterative singular value decomposition approaches depends on the eigengaps of the spectrum of the given matrix, i.e., the difference between consecutive eigenvalues. For a graph Laplacian corresponding to a well-clustered graph, the eigenvalues will be non-negative but very small (much less than 1) slowing convergence. This paper introduces a parallelizable approach to dilating the spectrum in order to accelerate SVD solvers and in turn, spectral clustering. This is accomplished via polynomial approximations to matrix operations that favorably transform the spectrum of a matrix without changing its eigenvectors. Experiments demonstrate that this approach significantly accelerates convergence, and we explain how this transformation can be parallelized and stochastically approximated to scale with available compute. },
+}
+
+@InProceedings{williams22a,
+title={Score Matching for Truncated Density Estimation on a Manifold},
+pages={312-321},
+author={Williams,Daniel J. and Liu, Song},
+abstract={When observations are truncated, we are limited to an incomplete picture of our dataset. Recent methods deal with truncated density estimation problems by turning to score matching, where the access to the intractable normalising constant is not required. We present a novel extension to truncated score matching for a Riemannian manifold. Applications are presented for the von Mises-Fisher and Kent distributions on a two dimensional sphere in R3, as well as a realworld application of extreme storm observations in the USA. In simulated data experiments, our score matching estimator is able to approximate the true parameter values with a low estimation error and shows improvements over a maximum likelihood estimator.},
+}
+
+@InProceedings{xenopoulos22a,
+title={GALE: Globally Assessing Local Explanations},
+author={Xenopoulos, Peter and Chan, Gromit and Doraiswamy, Harish and Nonato, Luis Gustavo and Barr, Brian and Silva, Claudio},
+pages={322-331},
+abstract={ Local explainability methods -- those which seek to generate an explanation for each prediction -- are increasingly prevalent. However, results from different local explainability methods are difficult to compare since they may be parameter-dependant, unstable due to sampling variability, or in various scales and dimensions. We propose GALE, a topology-based framework to extract a simplified representation from a set of local explanations. GALE models the relationship between the explanation space and model predictions to generate a topological skeleton, which we use to compare local explanation outputs. We demonstrate that GALE can not only reliably identify differences between explainability techniques but also provides stable representations. Then, we show how our framework can be used to identify appropriate parameters for local explainability methods. Our framework is simple, does not require complex optimizations, and can be broadly applied to most local explanation methods. },
+}
