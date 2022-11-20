@@ -15,7 +15,7 @@ id: TAGL-2022
 month: 0
 cycles: false
 bibtex_editor: Cloninger, Alexander and Doster, Timothy and Emerson, Tegan and Kaul,
-  Manohar and Ktena, Ira and Kvinge, Henry and Miolane, Nina and Rice, Bastian and
+  Manohar and Ktena, Ira and Kvinge, Henry and Miolane, Nina and Rieck, Bastian and
   Tymochko, Sarah and Wolf, Guy
 editor:
 - given: Alexander
@@ -33,7 +33,7 @@ editor:
 - given: Nina
   family: Miolane
 - given: Bastian
-  family: Rice
+  family: Rieck
 - given: Sarah
   family: Tymochko
 - given: Guy
@@ -53,7 +53,7 @@ description: |
     Ira Ktena
     Henry Kvinge
     Nina Miolane
-    Bastian Rice
+    Bastian Rieck
     Sarah Tymochko
     Guy Wolf
 
