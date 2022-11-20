@@ -22,7 +22,7 @@ Volume Edited by:
   * Ira Ktena
   * Henry Kvinge
   * Nina Miolane
-  * Bastian Rice
+  * Bastian Rieck
   * Sarah Tymochko
   * Guy Wolf
 
