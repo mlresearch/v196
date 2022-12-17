@@ -13,7 +13,7 @@ publisher: PMLR
 issn: 2640-3498
 id: gonzalez-marquez22a
 month: 0
-tex_title: Two-dimensional visualization of large document libraries using {t-SNE}
+tex_title: Two-dimensional Visualization of Large Document Libraries Using {t-SNE}
 firstpage: 133
 lastpage: 141
 page: 133-141
