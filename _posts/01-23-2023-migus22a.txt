@@ -1,0 +1,40 @@
+---
+title: Multi-Scale Physical Representations for Approximating PDE Solutions with Graph Neural Operators 
+abstract: Representing physical signals at different scales is among the most challenging problems in engineering. Several multi-scale modeling tools have been developed to describe physical systems governed by Partial Differential Equations (PDEs). These tools are at the crossroad of principled physical models and numerical schema. Recently, data-driven models have been introduced to speed-up the approximation of PDE solutions compared to numerical solvers. Among these recent data-driven methods, neural integral operators are a class that learn a mapping between function spaces. These functions are discretized on graphs (meshes) which are appropriate for modeling interactions in physical phenomena. In this work, we study three multi-resolution schema with integral kernel operators that can be approximated with Message Passing Graph Neural Networks (MPGNNs). To validate our study, we make extensive MPGNNs experiments with well-chosen metrics considering steady and unsteady PDEs.
+layout: inproceedings
+series: Proceedings of Machine Learning Research
+publisher: PMLR
+issn: 2640-3498
+id: migus22a
+month: 0
+tex_title: Multi-Scale Physical Representations for Approximating PDE Solutions with Graph Neural Operators
+firstpage: 332
+lastpage: 340
+page: 183-188
+order: 183
+cycles: false
+bibtex_author: Migus, Leon and Yin, Yuan and Ahmed Mazari, Jocelyn and  Gallinari, Patrick 
+author:
+- given: Leon
+  family: Migus
+- given: Yuan
+  family: Yin
+- given: Jocelyn
+  family: Ahmed Mazari
+- given: Patrick
+  family: Gallinari1
+date: 2022-11-09
+address:
+container-title: Proceedings of Topological, Algebraic, and Geometric Learning Workshops
+  2022
+volume: '196'
+genre: inproceedings
+issued:
+  date-parts:
+  - 2022
+  - 11
+  - 9
+pdf: https://proceedings.mlr.press/v196/jorgenson22a/migus22a.pdf
+extras: []
+# Format based on citeproc: http://blog.martinfenner.org/2013/07/30/citeproc-yaml-for-bibliographies/
+---
